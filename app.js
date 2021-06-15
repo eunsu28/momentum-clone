@@ -1,5 +1,6 @@
 const a = 8;
 const b = 10;
-const veryLongVariableName = 2;
+const veryLongVariableName = "Ayden";
 
 console.log(a + b)
+console.log(veryLongVariableName + " hello")
