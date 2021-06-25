@@ -1,9 +1,11 @@
-function sayHello() {
-    alert("hello");
-}
-sayHello()
+const player = {
+    name : "ay",
+    sayHello : function(name){
+        console.log("hello " + name);
+    },
+};
 
-
+player.sayHello();
 
 // constant can not change (상수)
 // variable with "let" can change value (변수)
@@ -16,3 +18,12 @@ sayHello()
 // object 를 만들기 위해서는 {}를 사용한다, 파이썬의 딕션어리와 비슷하다
 // 수정, 추가도 가능, ex: ayden.siblings = true;
 // function을 만들기 위해서는 function을 적는다, 오브젝트와 비슷
+//function()<-으로 세상과 연결 해준다
+// const player = {
+//     name : "ay",
+//     sayHello : function(name){
+//         console.log("hello " + name);
+//     },
+// };
+
+// player.sayHello();
