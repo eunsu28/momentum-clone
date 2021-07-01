@@ -1,25 +1,10 @@
-const calculator = {
-    add : function(a, b) {
-        console.log(a + b)
-    },
+const age = 96;
+function calKorAge(ageOfword) {
+    return ageOfword + 1;
+}
 
-    minus : function(a, b) {
-        console.log(a - b)
-    },
-
-    multiple : function(a, b) {
-        console.log(a * b)
-    },
-
-    divide : function(a, b) {
-        console.log(a / b)
-    }, 
-};
-
-console.log(calculator.add(2, 1))
-console.log(calculator.minus(2, 1))
-console.log(calculator.multiple(2, 1))
-console.log(calculator.divide(2, 1))
+const myAge = calKorAge(13);
+alert(myAge)
 // constant can not change (상수)
 // variable with "let" can change value (변수)
 // Before time we use "var" <- 옛날 거 아무것도 구분 못 함
@@ -40,3 +25,4 @@ console.log(calculator.divide(2, 1))
 // };
 
 // player.sayHello();
+// we will make some function that just return result to variable. To do that we should use "return"
