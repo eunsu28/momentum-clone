@@ -1,10 +1,7 @@
-const age = 96;
-function calKorAge(ageOfword) {
-    return ageOfword + 1;
-}
+const age = prompt("How old are you?")
 
-const myAge = calKorAge(13);
-alert(myAge)
+console.log(parseInt(age))
+
 // constant can not change (상수)
 // variable with "let" can change value (변수)
 // Before time we use "var" <- 옛날 거 아무것도 구분 못 함
@@ -26,3 +23,6 @@ alert(myAge)
 
 // player.sayHello();
 // we will make some function that just return result to variable. To do that we should use "return"
+// 조건문, if else 
+// prompt 는 파이썬에 input과 비슷하다? 
+// parserInt 는 파이썬에 int()와 비슷하다
