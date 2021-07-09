@@ -1,6 +1,7 @@
-const age = prompt("How old are you?")
+const age = parseInt(prompt("how old are you?")); 
+alert(age)
 
-console.log(parseInt(age))
+
 
 // constant can not change (상수)
 // variable with "let" can change value (변수)
@@ -26,3 +27,4 @@ console.log(parseInt(age))
 // 조건문, if else 
 // prompt 는 파이썬에 input과 비슷하다? 
 // parserInt 는 파이썬에 int()와 비슷하다
+//console.log(typeof(age), typeof(parseInt(age)))
