@@ -28,3 +28,4 @@ alert(age)
 // prompt 는 파이썬에 input과 비슷하다? 
 // parserInt 는 파이썬에 int()와 비슷하다
 //console.log(typeof(age), typeof(parseInt(age)))
+//isNon <- None 이냐?
