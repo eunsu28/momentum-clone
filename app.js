@@ -1,5 +1,10 @@
 const age = parseInt(prompt("how old are you?")); 
-alert(age)
+
+if(isNaN(age)){
+    alert("plese write number");
+} else {
+    alert(age);
+}
 
 
 
@@ -28,4 +33,4 @@ alert(age)
 // prompt 는 파이썬에 input과 비슷하다? 
 // parserInt 는 파이썬에 int()와 비슷하다
 //console.log(typeof(age), typeof(parseInt(age)))
-//isNon <- None 이냐?
+//isNan <- 숫가자 아냐냐? 라고 물어보는 것
