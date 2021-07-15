@@ -2,6 +2,8 @@ const age = parseInt(prompt("how old are you?"));
 
 if(isNaN(age)){
     alert("plese write number");
+} else if(age < 18){
+    alert("you need agreement from your parents")
 } else {
     alert(age);
 }
@@ -34,3 +36,4 @@ if(isNaN(age)){
 // parserInt 는 파이썬에 int()와 비슷하다
 //console.log(typeof(age), typeof(parseInt(age)))
 //isNan <- 숫가자 아냐냐? 라고 물어보는 것
+// else if == elif in python
