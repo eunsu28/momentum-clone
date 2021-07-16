@@ -4,8 +4,8 @@ if(isNaN(age)){
     alert("plese write number");
 } else if(age < 18){
     alert("you need agreement from your parents")
-} else {
-    alert(age);
+} else if(age > 60 || age < 30){
+    alert("don't drink to much");
 }
 
 
