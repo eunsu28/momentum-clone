@@ -38,3 +38,4 @@ if(isNaN(age)){
 //isNan <- 숫가자 아냐냐? 라고 물어보는 것
 // else if == elif in python
 // && 는 and, || 는 or
+// === 는 파이선에 == 이다 
