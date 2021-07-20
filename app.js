@@ -1,13 +1,3 @@
-const age = parseInt(prompt("how old are you?")); 
-
-if(isNaN(age)){
-    alert("plese write number");
-} else if(age < 18){
-    alert("you need agreement from your parents")
-} else if(age > 18){
-    alert("good to go");
-}
-
 
 
 // constant can not change (상수)
