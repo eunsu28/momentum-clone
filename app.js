@@ -44,4 +44,4 @@ title.addEventListener("mouseleave", mouseLeave);
 //     console.log("title was clicked");
 // }
 
-// hello.addEventListener("click", titleClick);
+// hello.addEventListener("click", titleClick);\
