@@ -25,7 +25,7 @@ function titleClick(){
 }
 
 function mouseEnter() {
-    title.innerText = "mouse is here"
+    title.innerText = "HELLO"
 }
 
 function mouseLeave() {
