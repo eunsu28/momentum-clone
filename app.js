@@ -5,7 +5,6 @@ function titleClick(){
     click += 1
     console.log("title was clicked");
     title.style.color = "red";
-    console.log(click);
     if(click === 2){
         title.style.color = "orange"
     } else if(click === 3){
@@ -40,12 +39,23 @@ function windowCopy() {
     alert("YOU COPY SOMETHING")
 }
 
+function ifOffline() {
+    alert("OFFLINE")
+}
+
+function ifOnline() {
+    alert("ONLINE")
+}
+
 title.addEventListener("click", titleClick); 
 title.addEventListener("mouseenter", mouseEnter); 
 title.addEventListener("mouseleave", mouseLeave); 
 
 window.addEventListener("resize", windowResize);
 window.addEventListener("copy", windowCopy)
+window.addEventListener("offline", ifOffline)
+window.addEventListener("online", ifOnline)
+
 
 
 
