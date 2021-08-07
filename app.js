@@ -32,9 +32,20 @@ function mouseLeave() {
     title.innerText = "mouse leave"
 }
 
-title.addEventListener("click", titleClick);
+function windowResize() {
+    document.body.style.backgroundColor = "tomato";
+}
+
+function windowCopy() {
+    alert("YOU COPY SOMETHING")
+}
+
+title.addEventListener("click", titleClick); 
 title.addEventListener("mouseenter", mouseEnter); 
 title.addEventListener("mouseleave", mouseLeave); 
+
+window.addEventListener("resize", windowResize);
+window.addEventListener("copy", windowCopy)
 
 
 
