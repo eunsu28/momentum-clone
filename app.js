@@ -2,60 +2,19 @@ const title = document.querySelector("div.hello:first-child h1");
 let click = 0;
 
 function titleClick(){
-    click += 1
-    console.log("title was clicked");
-    title.style.color = "red";
-    if(click === 2){
-        title.style.color = "orange"
-    } else if(click === 3){
-        title.style.color = "yellow"
-    } else if(click === 4){
-        title.style.color = "green"
-    } else if(click === 5){
-        title.style.color = "blue"
-    } else if(click === 6){
-        title.style.color = "pink"
-    } else if(click === 7){
-        title.style.color = "purple"
-    } else if(click === 7) {
-        click = 0
+    const cColor = title.style.color
+    let nColor;
+    if(cColor === "blue") {
+        nColor = "tomato";
+    } else{
+        nColor = "blue";
     }
+    title.style.color = nColor
     
 }
 
-function mouseEnter() {
-    title.innerText = "HELLO"
-}
-
-function mouseLeave() {
-    title.innerText = "mouse leave"
-}
-
-function windowResize() {
-    document.body.style.backgroundColor = "tomato";
-}
-
-function windowCopy() {
-    alert("YOU COPY SOMETHING")
-}
-
-function ifOffline() {
-    alert("OFFLINE")
-}
-
-function ifOnline() {
-    alert("ONLINE")
-}
 
 title.addEventListener("click", titleClick); 
-title.addEventListener("mouseenter", mouseEnter); 
-title.addEventListener("mouseleave", mouseLeave); 
-
-window.addEventListener("resize", windowResize);
-window.addEventListener("copy", windowCopy)
-window.addEventListener("offline", ifOffline)
-window.addEventListener("online", ifOnline)
-
 
 
 
