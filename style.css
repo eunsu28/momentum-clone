@@ -11,4 +11,8 @@ h1 {
     color: tomato;
 }
 
+.font {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* transition:color .5s ease-in-out; */

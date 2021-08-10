@@ -1,12 +1,7 @@
 const title = document.querySelector("div.hello:first-child h1");
 
 function titleClick(){
-    const clickedClass = "clicked";
-    if (title.className === clickedClass) {
-        title.className = "";
-    } else {
-        title.className = clickedClass;
-    }
+    title.classList.toggle("clicked")
 } 
 
 
@@ -21,3 +16,5 @@ title.addEventListener("click", titleClick);
 // }
 
 // hello.addEventListener("click", titleClick);
+// use classList ex: .remove .add .contains
+// toggle the best
