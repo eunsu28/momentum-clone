@@ -28,4 +28,3 @@ if(savedUsername === null){
     paintGreeting(savedUsername)
 }
 
-//.length tell the length 
