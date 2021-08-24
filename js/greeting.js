@@ -28,5 +28,3 @@ if(savedUsername === null){
     //show h1 
     paintGreeting()
 }
-
-//홀롤롤로
