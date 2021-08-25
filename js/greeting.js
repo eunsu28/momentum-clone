@@ -15,7 +15,7 @@ function onLoginSubmit(event) {
 
 function paintGreeting() {
     const username = localStorage.getItem(USERNAME_KEY)
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `Hello ${username} nice to meet you`;
     greeting.classList.remove(HIDDEN_CLASSNAME); 
 }
 //
