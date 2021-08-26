@@ -9,4 +9,3 @@ getTime();
 setInterval(getTime, 1000);
 // setInterval(function, milli second)
 // set Timeout
- 
