@@ -36,3 +36,7 @@ const quotes = [
         author: "Martin Luther King Jr",
     },
 ]
+
+const quote = document.querySelector("#quote span:first-child")
+const author = document.querySelector("#quote span:last-child")
+
