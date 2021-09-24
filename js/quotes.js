@@ -1,3 +1,4 @@
+// quotes array
 const quotes = [
     {
         quote: "피할수 없으면 즐겨라",
@@ -36,11 +37,18 @@ const quotes = [
         author: "Martin Luther King Jr",
     },
 ]
+//
 
+//queryselector
 const quote = document.querySelector("#quote span:first-child")
 const author = document.querySelector("#quote span:last-child")
+//
 
+//randomly choose
 const todaysQutoe = quotes[Math.floor(Math.random() * quotes.length)];
+//
 
+//inner text
 quote.innerText = todaysQutoe.quote;
 author.innerText = todaysQutoe.author;
+//
