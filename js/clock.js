@@ -2,7 +2,7 @@
 const clock = document.querySelector("h2#clock");
 //
 
-// get time using data.getHours / getMInutes / getSeconds
+// get time using data.getHours / getMinutes / getSeconds
 function getTime() {
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, "0");
