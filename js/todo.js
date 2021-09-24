@@ -1,18 +1,27 @@
+// document quarySelector
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input")
 const toDoList = document.getElementById("todo-list");
+//
 
+// array
 const toDos = [];
+//
 
+// save 
 function saveToDos(){
     localStorage.setItem("todos", JSON.stringify(toDos));
 }
+//
 
+// delate to do
 function deleteToDo(event) {
     const li = event.target.parentElement;
     li.remove();
 }
+//
 
+// inner text todo
 function paintToDo(newTodo){
     const li = document.createElement("li");
     const span = document.createElement("span");
@@ -24,8 +33,10 @@ function paintToDo(newTodo){
     li.appendChild(button);
     toDoList.appendChild(li);
 }
+//
 
-function handleToDoSubmit(event ) {
+// function to handle submit
+function handleToDoSubmit(event) {
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = ""; 
@@ -33,5 +44,9 @@ function handleToDoSubmit(event ) {
     paintToDo(newTodo);
     saveToDos();
 }
+//
 
+
+//eventlistener
 toDoForm.addEventListener("submit", handleToDoSubmit);
+//
