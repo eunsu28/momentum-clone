@@ -5,7 +5,7 @@ const toDoList = document.getElementById("todo-list");
 //
 
 // array
-const toDos = [];
+let toDos = [];
 //
 
 // save 
@@ -40,7 +40,11 @@ function handleToDoSubmit(event) {
     event.preventDefault();
     const newTodo = toDoInput.value;
     toDoInput.value = ""; 
-    toDos.push(newTodo);
+    const newTodoObj = {
+        text: newTodo,
+        id: Date.now(),
+    }
+    toDos.push(newTodoObj);
     paintToDo(newTodo);
     saveToDos();
 }
@@ -55,5 +59,6 @@ const savedToDos = localStorage.getItem("todos");
 
 if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
+    toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
