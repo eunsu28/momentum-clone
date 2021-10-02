@@ -56,10 +56,14 @@ function handleToDoSubmit(event) {
 toDoForm.addEventListener("submit", handleToDoSubmit);
 //
 
+// get todos from local storage
 const savedToDos = localStorage.getItem("todos");
+//
 
+// wow
 if(savedToDos !== null) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+//
