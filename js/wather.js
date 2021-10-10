@@ -1,6 +1,9 @@
 // function when success
-function onGeoOk(){
+function onGeoOk(position){
+    const lat = position.coords.latitude;
+    const long = position.coords.longitude;
     console.log("Hello")
+    console.log(lat, long)
 }
 //
 
