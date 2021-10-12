@@ -10,6 +10,7 @@ function onGeoOk(position){
     fetch(url)
         .then((response) => response.json())
         .then((data) => {
+            console.log(data.name, data.weather)
             city.innerText = data.name;
             weather.innerText = data.weather[0].main;
         });
